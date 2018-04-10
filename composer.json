@@ -17,8 +17,7 @@
 	"require": {
 		"php": ">=5.4.0",
 		"ext-fileinfo": "*",
-		"illuminate/support": "5.*",
-		"qiniu/php-sdk": "7.*"
+		"illuminate/support": "5.*"
 	},
 	"autoload": {
 		"psr-4": {
