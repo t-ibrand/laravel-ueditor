@@ -1,7 +1,7 @@
 # laravel-u-editor
 laravel ueditor
 
-##### 基于stevenyangecho/laravel-u-editor
+##### 基于[stevenyangecho/laravel-u-editor](https://github.com/stevenyangecho/laravel-u-editor)
 
 ##### 主要针对docker容器自动化部署 laravel 项目时 项目public目录无写权限，导致ueditor 上传图片失败做出一些修改，将图片上传，展示目录修改为 storage/app/public 目录
 
