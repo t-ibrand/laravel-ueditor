@@ -68,14 +68,6 @@ class Controller extends BaseController
 						$config['imageManagerListSize'],
 						$config['imageManagerListPath'],
 						$request))->getList();
-				} else {
-					if (config('UEditorUpload.core.mode') == 'qiniu') {
-						$result = with(new ListsQiniu(
-							$config['imageManagerAllowFiles'],
-							$config['imageManagerListSize'],
-							$config['imageManagerListPath'],
-							$request))->getList();
-					}
 				}
 
 				break;
@@ -87,14 +79,6 @@ class Controller extends BaseController
 						$config['fileManagerListSize'],
 						$config['fileManagerListPath'],
 						$request))->getList();
-				} else {
-					if (config('UEditorUpload.core.mode') == 'qiniu') {
-						$result = with(new ListsQiniu(
-							$config['fileManagerAllowFiles'],
-							$config['fileManagerListSize'],
-							$config['fileManagerListPath'],
-							$request))->getList();
-					}
 				}
 
 				break;
@@ -135,5 +119,4 @@ class Controller extends BaseController
 
 		return response()->json($result, 200, [], JSON_UNESCAPED_UNICODE);
 	}
-
 }
